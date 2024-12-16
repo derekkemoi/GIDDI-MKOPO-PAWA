@@ -66,7 +66,7 @@ export default function GetLoan() {
                         sx={{ py: 3, display: 'flex', justifyContent: 'space-between' }}
                     >
                         <Box sx={{ gap: 2, display: 'flex', alignItems: 'center' }}>
-                            <Typography level="title-lg">MKOPO PAWA</Typography>
+                            <Typography level="title-lg">MKOPO POA</Typography>
                             <Avatar variant={"rounded"} alt="The image" src={url} style={{
                                 width: 38,
                                 height: 38,
@@ -125,7 +125,7 @@ export default function GetLoan() {
                     </Box>
                     <Box component="footer" sx={{ py: 3 }} backgroundColor='primary.main'>
                         <Typography level="body-xs" sx={{ textAlign: 'center' }}>
-                            © Mkopo Pawa {new Date().getFullYear()}
+                            © Mkopo Ppa {new Date().getFullYear()}
                         </Typography>
                     </Box>
                 </Box>

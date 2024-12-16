@@ -79,7 +79,7 @@ export default function JoySignInSideTemplate() {
             sx={{ py: 3, display: 'flex', justifyContent: 'space-between' }}
           >
             <Box sx={{ gap: 2, display: 'flex', alignItems: 'center' }}>
-              <Typography level="title-lg">MKOPO PAWA</Typography>
+              <Typography level="title-lg">MKOPO POA</Typography>
               <Avatar variant={"rounded"} alt="The image" src={url} style={{
                 width: 38,
                 height: 38,
