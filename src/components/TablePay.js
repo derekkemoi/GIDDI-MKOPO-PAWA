@@ -66,7 +66,9 @@ export default function TablePay(props) {
                                 <IconButton onClick={() => { copyToClipBoard("4158516") }} variant="solid">
                                     <ContentCopyIcon/>
                                 </IconButton>
-                                {copySuccess}
+                                {
+                                    copySuccess ? copySuccess : "Copy Till"
+                                }
                             </Typography></td>
                     </tr>
                     <tr key="2">

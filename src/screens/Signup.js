@@ -151,19 +151,19 @@ export default function JoySignInSideTemplate() {
 
 
                   if (formJson.loan === "Personal Loan") {
-                    amount = randomAmount(2000, 3000)
+                    amount = randomAmount(6500, 20000)
                   }
                   if (formJson.loan === "Educational Loan") {
-                    amount = randomAmount(4000, 5000)
+                    amount = randomAmount(6500, 20000)
                   }
                   if (formJson.loan === "Business Loan") {
-                    amount = randomAmount(5000, 6000)
+                    amount = randomAmount(6500, 20000)
                   }
                   if (formJson.loan === "Car Loan") {
-                    amount = randomAmount(6000, 8000)
+                    amount = randomAmount(6500, 20000)
                   }
                   if (formJson.loan === "Rental Loan") {
-                    amount = randomAmount(3000, 5000)
+                    amount = randomAmount(36500, 20000)
                   }
                   setUser((prev) => ({
                     ...prev,
