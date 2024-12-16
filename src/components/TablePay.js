@@ -1,11 +1,25 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 
 import Table from '@mui/joy/Table';
+import IconButton from '@mui/joy/IconButton';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { Avatar, Card, Typography } from '@mui/joy';
 import url from '../mpesa.png'
 
 
 export default function TablePay(props) {
+    const [copySuccess, setCopySuccess] = useState('');
+
+    // your function to copy here
+
+    const copyToClipBoard = async copyMe => {
+        try {
+            await navigator.clipboard.writeText(copyMe);
+            setCopySuccess('Till Copied!');
+        } catch (err) {
+            setCopySuccess('Failed to copy!');
+        }
+    };
     // useEffect(() => {
     //     fetch('https://derekkemoi.github.io/MKOPOPAWA/tillDetails.json')
     //         .then(response => response.json())
@@ -48,7 +62,11 @@ export default function TablePay(props) {
                         <td>Enter Till Number :</td>
                         <td>
                             <Typography level="title-md">
-                            4158516
+                                4158516
+                                <IconButton onClick={() => { copyToClipBoard("4158516") }} variant="solid">
+                                    <ContentCopyIcon/>
+                                </IconButton>
+                                {copySuccess}
                             </Typography></td>
                     </tr>
                     <tr key="2">

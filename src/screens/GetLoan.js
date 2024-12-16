@@ -106,7 +106,7 @@ export default function GetLoan() {
                                                 variant="solid"
                                                 color="success"
                                             >
-                                                Complete verfication to receive your loan
+                                                Complete verification to receive your loan
                                             </Chip>
                                     }
                                 </CardContent>
@@ -125,7 +125,7 @@ export default function GetLoan() {
                     </Box>
                     <Box component="footer" sx={{ py: 3 }} backgroundColor='primary.main'>
                         <Typography level="body-xs" sx={{ textAlign: 'center' }}>
-                            © Mkopo Ppa {new Date().getFullYear()}
+                            © Mkopo Poa {new Date().getFullYear()}
                         </Typography>
                     </Box>
                 </Box>

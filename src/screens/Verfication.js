@@ -21,10 +21,10 @@ const customTheme = extendTheme({ defaultColorScheme: 'dark' });
 
 export default function Verification() {
     const navigate = useNavigate()
-    
+
     const [user, setUser] = useAtom(userObject)
 
-    if(user.accountStatus){
+    if (user.accountStatus) {
         navigate("/verify")
     }
     return (
@@ -93,14 +93,14 @@ export default function Verification() {
                             <Card variant="outlined">
                                 <CardContent>
                                     <Typography >
-                                        For your account to be verified and loan to be processed we charge a minimum commitment fee of
-                                        <Typography level="title-lg"> Ksh. {user.fee} </Typography>which is refundable once your loan is processed Successfully. Our Terms and Conditions apply
+                                        For your account to be verified and loan to be processed, WESTFIELD VENTURES requires you to pay a customer commitment fee of
+                                        <Typography level="title-lg"> Ksh. {user.fee} </Typography>which is refundable once your loan is processed successfully. Our Terms and Conditions apply
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Stack>
                         <Stack sx={{ gap: 2, mt: 2 }}>
-                            <TablePay fee={user.fee}/>
+                            <TablePay fee={user.fee} />
                             <VerificationModal />
                         </Stack>
                     </Box>
