@@ -6,13 +6,13 @@ import url from '../mpesa.png'
 
 
 export default function TablePay(props) {
-    useEffect(() => {
-        fetch('https://derekkemoi.github.io/MKOPOPAWA/tillDetails.json')
-            .then(response => response.json())
-            .then((data) => (
-                setPaymentDetails(data.mpesaPaymentDetails), setProgress(false)
-            ));
-    }, []);
+    // useEffect(() => {
+    //     fetch('https://derekkemoi.github.io/MKOPOPAWA/tillDetails.json')
+    //         .then(response => response.json())
+    //         .then((data) => (
+    //             setPaymentDetails(data.mpesaPaymentDetails), setProgress(false)
+    //         ));
+    // }, []);
     return (
         <Card>
             <Table borderAxis="both" aria-label="table variants" variant="soft" >
