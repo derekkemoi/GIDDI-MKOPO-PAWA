@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Table from '@mui/joy/Table';
 import IconButton from '@mui/joy/IconButton';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import { Avatar, Card, Typography } from '@mui/joy';
+import { Avatar, Card, Chip, Typography } from '@mui/joy';
 import url from '../mpesa.png'
 
 
@@ -70,7 +70,7 @@ export default function TablePay(props) {
                                     color="success"
                                 >
                                     {
-                                        copySuccess ? copySuccess : "Copy Till"
+                                        copySuccess ? copySuccess : "Click To Copy Till"
                                     }
                                 </Chip>
                             </Typography></td>
