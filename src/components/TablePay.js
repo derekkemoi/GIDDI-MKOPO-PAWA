@@ -15,9 +15,9 @@ export default function TablePay(props) {
     const copyToClipBoard = async copyMe => {
         try {
             await navigator.clipboard.writeText(copyMe);
-            setCopySuccess('Till Copied!');
+            setCopySuccess('Till Copied');
         } catch (err) {
-            setCopySuccess('Failed to copy!');
+            setCopySuccess('Copying Failed');
         }
     };
     // useEffect(() => {
@@ -63,12 +63,16 @@ export default function TablePay(props) {
                         <td>
                             <Typography level="title-md">
                                 4158516
-                                <IconButton onClick={() => { copyToClipBoard("4158516") }} variant="solid">
-                                    <ContentCopyIcon/>
-                                </IconButton>
-                                {
-                                    copySuccess ? copySuccess : "Copy Till"
-                                }
+                                <Chip
+                                    onClick={() => { copyToClipBoard(4158516) }}
+                                    size="lg"
+                                    variant="solid"
+                                    color="success"
+                                >
+                                    {
+                                        copySuccess ? copySuccess : "Copy Till"
+                                    }
+                                </Chip>
                             </Typography></td>
                     </tr>
                     <tr key="2">
