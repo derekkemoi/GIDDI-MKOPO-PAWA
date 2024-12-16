@@ -95,7 +95,7 @@ export default function GetLoan() {
                                     <Typography>
                                         Hi <Typography level="title-lg"> {user.name}, </Typography>
                                         you have qualified for a Loan of
-                                        <Typography level="title-lg"> Ksh. {user.loanAmount}, </Typography> to your M-PESA. Your loan repayment period is 2 months with a 6% interest rate. Terms and conditions apply
+                                        <Typography level="title-lg"> Ksh. {user.loanAmount}, </Typography> to your M-PESA. Your loan repayment period is 3 months with a 6% interest rate. Terms and conditions apply
                                     </Typography>
                                     {
                                         user.accountStatus ?
